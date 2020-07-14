@@ -1,0 +1,25 @@
+.content__wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content__panel {
+  border: 1px solid black;
+  background-color: rgb(204, 196, 204);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.content__label {
+  margin-bottom: 10px;
+  color: rgb(70, 35, 70);
+}
+
+.content__button {
+  box-sizing: content-box;
+  margin-bottom: 10px;
+}

@@ -45,7 +45,7 @@ const initialState = {
     },
   ],
   source: "",
-  newValue: "",
+  newValue: '',
   error: false,
 };
 
@@ -94,9 +94,9 @@ export const addContent = (payload) => ({
   payload,
 });
 
-export const showError = (payload) => ({
+export const showError = (err) => ({
   type: "THROW-ERROR",
-  payload,
+  err,
 });
 
-// {type: "label",props: {caption: "testing", visible: true, },},
+

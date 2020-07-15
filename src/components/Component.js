@@ -46,6 +46,7 @@ const Component = ({
       if (newValue[0] === "{" && newValue[newValue.length - 1] === "}") {
         val = eval("(" + newValue + ")");
       }
+      
 
       if (typeof eval(source) == "number") val = +newValue;
       if (typeof eval(source) == "boolean") val = Boolean(eval(newValue));
@@ -54,6 +55,7 @@ const Component = ({
       const arrName = source.split(".").slice(0, 1).join();
       const elemName = source.split(".").slice(1).join(".");
       const arrContent = content.map((item) => {
+
         if (item === eval(arrName) && elemName) {
           eval("item." + elemName + "=val");
           return item;
@@ -65,11 +67,14 @@ const Component = ({
         } else return item;
       });
 
+      if (eval(arrName) === undefined) {
+        arrContent.push(eval("(" + newValue + ")"))
+        }
+      
       addContent(arrContent);
     } catch {
       showError(true);
     }
-    //
   };
 
   return (
@@ -98,6 +103,7 @@ const Component = ({
           />
         </div>
         <button onClick={apply}>Применить</button>
+        {error ? <span className={cls.error}>Ошибка ввода поля "Путь" или поля "Новое значение"</span> : null}
       </header>
       <div className={cls.content}>
         <Content content={content} />

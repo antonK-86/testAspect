@@ -86,9 +86,7 @@ const Component = ({
             type="text"
             id="route"
             value={source}
-            onChange={(e) => {
-              handlerChangeRoute(e);
-            }}
+            onChange={handlerChangeRoute}
           />
         </div>
         <div className={cls.header__item}>
@@ -97,9 +95,7 @@ const Component = ({
             type="text"
             id="newValue"
             value={newValue}
-            onChange={(e) => {
-              handlerChangeValue(e);
-            }}
+            onChange={handlerChangeValue}
           />
         </div>
         <button onClick={apply}>Применить</button>

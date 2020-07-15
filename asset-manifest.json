@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/testAspect/static/css/main.a69e278a.chunk.css",
+    "main.js": "/testAspect/static/js/main.9abf3a5c.chunk.js",
+    "main.js.map": "/testAspect/static/js/main.9abf3a5c.chunk.js.map",
+    "runtime-main.js": "/testAspect/static/js/runtime-main.c29f1db5.js",
+    "runtime-main.js.map": "/testAspect/static/js/runtime-main.c29f1db5.js.map",
+    "static/js/2.96f2cabe.chunk.js": "/testAspect/static/js/2.96f2cabe.chunk.js",
+    "static/js/2.96f2cabe.chunk.js.map": "/testAspect/static/js/2.96f2cabe.chunk.js.map",
+    "index.html": "/testAspect/index.html",
+    "precache-manifest.f830c6df8e124b15294549850cde55b8.js": "/testAspect/precache-manifest.f830c6df8e124b15294549850cde55b8.js",
+    "service-worker.js": "/testAspect/service-worker.js",
+    "static/css/main.a69e278a.chunk.css.map": "/testAspect/static/css/main.a69e278a.chunk.css.map",
+    "static/js/2.96f2cabe.chunk.js.LICENSE.txt": "/testAspect/static/js/2.96f2cabe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c29f1db5.js",
+    "static/js/2.96f2cabe.chunk.js",
+    "static/css/main.a69e278a.chunk.css",
+    "static/js/main.9abf3a5c.chunk.js"
+  ]
+}
